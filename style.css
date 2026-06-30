@@ -1,0 +1,445 @@
+:root {
+  --wall: #f4efe6;
+  --cream: #fbf8f2;
+  --wood: #e3b77d;
+  --wood-light: #edcb9e;
+  --wood-deep: #b8824b;
+  --emerald: #7fa17d;
+  --emerald-dark: #5f8460;
+  --ink: #3a332c;
+}
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  background: var(--wall);
+  color: var(--ink);
+  font-family: "Work Sans", sans-serif;
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+h1,
+h2,
+h3,
+.display {
+  font-family: "Lora", serif;
+  font-weight: 500;
+  letter-spacing: -0.01em;
+}
+a {
+  color: inherit;
+  text-decoration: none;
+}
+img {
+  max-width: 100%;
+  display: block;
+}
+.wrap {
+  max-width: 1120px;
+  margin: 0 auto;
+  padding: 0 32px;
+}
+
+/* ring motif used as recurring signature */
+.rings {
+  position: absolute;
+  pointer-events: none;
+}
+.rings svg {
+  display: block;
+}
+
+/* NAV */
+nav {
+  position: sticky;
+  top: 0;
+  z-index: 50;
+  background: rgba(237, 230, 218, 0.92);
+  backdrop-filter: blur(6px);
+  border-bottom: 1px solid rgba(42, 36, 32, 0.08);
+}
+nav .wrap {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 76px;
+}
+.logo {
+  font-family: "Lora", serif;
+  font-size: 1.5rem;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.logo .dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: var(--emerald);
+  display: inline-block;
+}
+.nav-links {
+  display: flex;
+  gap: 36px;
+  font-size: 0.95rem;
+}
+.nav-links a {
+  position: relative;
+  padding-bottom: 4px;
+}
+.nav-links a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0;
+  height: 1px;
+  background: var(--wood-deep);
+  transition: width 0.25s ease;
+}
+.nav-links a:hover::after {
+  width: 100%;
+}
+.nav-cta {
+  background: var(--emerald-dark);
+  color: var(--cream);
+  padding: 10px 22px;
+  border-radius: 2px;
+  font-size: 0.9rem;
+  font-weight: 500;
+  transition:
+    background 0.3s,
+    border-radius 0.3s;
+}
+.nav-cta:hover {
+  background: var(--wood-deep);
+  border-radius: 30px;
+}
+
+/* HERO */
+.hero {
+  height: 100vh;
+  position: relative;
+  overflow: hidden;
+  background: var(--cream);
+  color: var(--ink);
+  border-bottom: 1px solid rgba(58, 51, 44, 0.08);
+}
+.hero .wrap {
+  display: grid;
+  grid-template-columns: 1.1fr 0.9fr;
+  align-items: center;
+  min-height: 820px;
+  gap: 48px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+.hero .eyebrow {
+  font-size: 0.8rem;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--emerald-dark);
+  margin-bottom: 22px;
+  font-weight: 600;
+}
+.hero h1 {
+  font-size: clamp(2.6rem, 5.2vw, 4.4rem);
+  line-height: 1.04;
+  margin-bottom: 24px;
+}
+.hero h1 em {
+  font-style: italic;
+  font-weight: 400;
+  color: var(--wood-deep);
+}
+.hero p {
+  font-size: 1.05rem;
+  max-width: 420px;
+  color: rgba(58, 51, 44, 0.7);
+  margin-bottom: 32px;
+}
+.hero-actions {
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+.btn-primary {
+  background: var(--emerald-dark);
+  color: var(--cream);
+  padding: 14px 28px;
+  font-weight: 600;
+  font-size: 0.95rem;
+  border-radius: 2px;
+  transition:
+    transform 0.2s ease,
+    background 0.2s ease;
+  display: inline-block;
+}
+.btn-primary:hover {
+  transform: translateY(-2px);
+  background: var(--wood-deep);
+}
+.btn-ghost {
+  border: 1px solid rgba(58, 51, 44, 0.25);
+  padding: 14px 28px;
+  font-weight: 500;
+  font-size: 0.95rem;
+  border-radius: 2px;
+  color: var(--ink);
+  transition: border-color 0.2s ease;
+}
+.btn-ghost:hover {
+  border-color: var(--ink);
+}
+
+.hero-visual {
+  position: relative;
+  height: 420px;
+}
+.ring-cluster {
+  position: absolute;
+  inset: 0;
+}
+
+/* PHILOSOPHY */
+.philosophy {
+  padding: 120px 0 100px;
+  position: relative;
+}
+.philosophy .wrap {
+  display: grid;
+  grid-template-columns: 0.85fr 1.15fr;
+  gap: 64px;
+  align-items: start;
+}
+.philosophy .word-mark {
+  font-size: clamp(3rem, 6vw, 5rem);
+  font-style: italic;
+  color: var(--wood-deep);
+  line-height: 1;
+}
+.philosophy .tag {
+  font-size: 0.8rem;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--wood-deep);
+  font-weight: 600;
+  margin-bottom: 18px;
+  display: block;
+}
+.philosophy h2 {
+  font-size: clamp(1.8rem, 3vw, 2.5rem);
+  margin-bottom: 24px;
+  color: var(--ink);
+}
+.philosophy p {
+  font-size: 1.05rem;
+  color: rgba(42, 36, 32, 0.78);
+  margin-bottom: 18px;
+  max-width: 520px;
+}
+.philosophy .signature-line {
+  margin-top: 36px;
+  display: flex;
+  align-items: center;
+  gap: 18px;
+}
+.signature-line svg {
+  flex-shrink: 0;
+}
+.signature-line span {
+  font-style: italic;
+  font-family: "Lora", serif;
+  font-size: 1.1rem;
+  color: var(--emerald-dark);
+}
+
+/* MENU */
+.menu {
+  background: var(--cream);
+  padding: 100px 0;
+  border-top: 1px solid rgba(42, 36, 32, 0.08);
+  border-bottom: 1px solid rgba(42, 36, 32, 0.08);
+}
+.menu-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin-bottom: 56px;
+  flex-wrap: wrap;
+  gap: 24px;
+}
+.menu-head .tag {
+  font-size: 0.8rem;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--wood-deep);
+  font-weight: 600;
+  display: block;
+  margin-bottom: 14px;
+}
+.menu-head h2 {
+  font-size: clamp(1.8rem, 3vw, 2.4rem);
+}
+.menu-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1px;
+  background: rgba(42, 36, 32, 0.1);
+  border: 1px solid rgba(42, 36, 32, 0.1);
+}
+.menu-item {
+  background: var(--cream);
+  padding: 36px 32px;
+  transition: background 0.25s ease;
+}
+.menu-item:hover {
+  background: var(--wall);
+}
+.menu-item .num {
+  font-family: "Lora", serif;
+  font-style: italic;
+  color: var(--wood-light);
+  font-size: 0.9rem;
+  margin-bottom: 18px;
+  display: block;
+}
+.menu-item h3 {
+  font-size: 1.3rem;
+  margin-bottom: 10px;
+}
+.menu-item p {
+  font-size: 0.92rem;
+  color: rgba(42, 36, 32, 0.65);
+  margin-bottom: 16px;
+}
+.menu-item .price {
+  font-weight: 600;
+  color: var(--emerald-dark);
+  font-size: 0.95rem;
+}
+
+/* VISIT / LOCATION */
+.visit {
+  padding: 110px 0;
+}
+.visit .wrap {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 64px;
+  align-items: center;
+}
+.visit-card {
+  background: var(--emerald);
+  color: var(--ink);
+  padding: 56px 48px;
+  border-radius: 2px;
+  position: relative;
+  overflow: hidden;
+}
+.visit-card h2 {
+  font-size: clamp(1.8rem, 3vw, 2.3rem);
+  margin-bottom: 28px;
+}
+.visit-row {
+  display: flex;
+  justify-content: space-between;
+  padding: 16px 0;
+  border-bottom: 1px solid rgba(58, 51, 44, 0.15);
+  font-size: 0.95rem;
+}
+.visit-row:last-of-type {
+  border-bottom: none;
+}
+.visit-row .label {
+  color: rgba(58, 51, 44, 0.55);
+}
+.visit-card .btn-primary {
+  margin-top: 32px;
+  background: var(--wood-deep);
+  color: var(--cream);
+}
+.visit-card .btn-primary:hover {
+  background: var(--ink);
+}
+
+.visit-copy .tag {
+  font-size: 0.8rem;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--wood-deep);
+  font-weight: 600;
+  display: block;
+  margin-bottom: 14px;
+}
+.visit-copy h2 {
+  font-size: clamp(1.8rem, 3vw, 2.4rem);
+  margin-bottom: 20px;
+}
+.visit-copy p {
+  color: rgba(42, 36, 32, 0.75);
+  font-size: 1.02rem;
+  max-width: 440px;
+}
+
+/* FOOTER */
+footer {
+  background: var(--wood-deep);
+  color: rgba(251, 248, 242, 0.85);
+  padding: 56px 0 36px;
+}
+footer .wrap {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+footer .logo {
+  color: var(--cream);
+}
+footer .foot-links {
+  display: flex;
+  gap: 28px;
+  font-size: 0.9rem;
+}
+footer .foot-links a:hover {
+  color: var(--cream);
+}
+.foot-bottom {
+  margin-top: 32px;
+  padding-top: 24px;
+  border-top: 1px solid rgba(251, 248, 242, 0.2);
+  font-size: 0.82rem;
+  color: rgba(251, 248, 242, 0.6);
+}
+
+@media (max-width: 880px) {
+  .hero .wrap {
+    grid-template-columns: 1fr;
+    min-height: auto;
+  }
+  .hero-visual {
+    height: 260px;
+    order: -1;
+  }
+  .philosophy .wrap {
+    grid-template-columns: 1fr;
+  }
+  .menu-grid {
+    grid-template-columns: 1fr;
+  }
+  .visit .wrap {
+    grid-template-columns: 1fr;
+  }
+  .nav-links {
+    display: none;
+  }
+}
