@@ -7,6 +7,11 @@
   --emerald: #7fa17d;
   --emerald-dark: #5f8460;
   --ink: #3a332c;
+  /* semantic aliases */
+  --sage: #bcc6ae;
+  --sage-deep: #7fa17d;
+  --caramel: #e3b77d;
+  --caramel-deep: #b8824b;
 }
 * {
   box-sizing: border-box;
@@ -108,19 +113,48 @@ nav .wrap {
   width: 100%;
 }
 .nav-cta {
-  background: var(--emerald-dark);
+  background: var(--emerald);
   color: var(--cream);
   padding: 10px 22px;
   border-radius: 2px;
   font-size: 0.9rem;
   font-weight: 500;
-  transition:
-    background 0.3s,
-    border-radius 0.3s;
+  transition: background 0.2s ease;
 }
 .nav-cta:hover {
-  background: var(--wood-deep);
-  border-radius: 30px;
+  background: var(--emerald-dark);
+}
+
+/* language toggle */
+.lang-btn {
+  display: flex;
+  align-items: center;
+  gap: 0;
+  border: 1px solid rgba(58, 51, 44, 0.18);
+  border-radius: 2px;
+  overflow: hidden;
+  cursor: pointer;
+  font-size: 0.78rem;
+  font-weight: 600;
+  font-family: "Work Sans", sans-serif;
+  letter-spacing: 0.06em;
+  background: none;
+  padding: 0;
+}
+.lang-btn span {
+  padding: 7px 11px;
+  color: rgba(58, 51, 44, 0.45);
+  transition:
+    background 0.2s,
+    color 0.2s;
+  border: none;
+}
+.lang-btn span.lang-active {
+  background: var(--emerald);
+  color: var(--cream);
+}
+.lang-btn span:not(.lang-active):hover {
+  color: var(--ink);
 }
 
 /* HERO */

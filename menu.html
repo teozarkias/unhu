@@ -1,0 +1,657 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Menu — Unhu Coffee</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Work+Sans:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="menu.css" />
+  </head>
+  <body>
+    <nav>
+      <div class="wrap">
+        <a class="logo" href="index.html"><span class="dot"></span>Unhu</a>
+        <div class="nav-links">
+          <a
+            href="index.html#philosophy"
+            data-en="Philosophy"
+            data-gr="Φιλοσοφία"
+            >Philosophy</a
+          >
+          <a href="menu.html" data-en="Menu" data-gr="Μενού">Menu</a>
+          <a href="index.html#visit" data-en="Visit" data-gr="Επίσκεψη"
+            >Visit</a
+          >
+        </div>
+        <div style="display: flex; align-items: center; gap: 12px">
+          <button class="lang-btn" aria-label="Toggle language">
+            <span class="lang-en lang-active">EN</span>
+            <span class="lang-gr">GR</span>
+          </button>
+        </div>
+      </div>
+    </nav>
+
+    <section class="menu-hero">
+      <div class="wrap">
+        <span
+          class="eyebrow"
+          data-en="Kallithea, Athens"
+          data-gr="Καλλιθέα, Αθήνα"
+          >Kallithea, Athens</span
+        >
+        <h1 data-en="A short, honest menu." data-gr="Ένα σύντομο, τίμιο μενού.">
+          A short, honest menu.
+        </h1>
+        <p
+          data-en="Everything made with care. Prices shown for away (takeaway cup) and home (sit in)."
+          data-gr="Όλα φτιαγμένα με φροντίδα. Τιμές για away (takeaway) και home (στο χώρο)."
+        >
+          Everything made with care. Prices shown for away (takeaway cup) and
+          home (sit in).
+        </p>
+        <div class="pricing-key">
+          <span data-en="Away" data-gr="Away">Away</span>
+          <span class="sep">/</span>
+          <span data-en="Home" data-gr="Home">Home</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="menu-page">
+      <div class="wrap">
+        <!-- ALL ABOUT COFFEE -->
+        <div class="menu-section two-col">
+          <div class="section-header">
+            <h2 data-en="All about coffee" data-gr="Όλα για τον καφέ">
+              All about coffee
+            </h2>
+            <!-- <div class="col-labels">
+              <span data-en="Away" data-gr="Away">Away</span
+              ><span data-en="Home" data-gr="Home">Home</span>
+            </div> -->
+          </div>
+          <div class="items-grid">
+            <div class="menu-item">
+              <div class="item-info">
+                <div class="item-name">Espresso Single</div>
+                <div
+                  class="item-desc"
+                  data-en="20g of delicious coffee extracted carefully."
+                  data-gr="20γρ εξαιρετικού καφέ, εκχυλισμένου με προσοχή."
+                >
+                  20g of delicious coffee extracted carefully.
+                </div>
+              </div>
+              <div class="item-prices">
+                <span class="price away dash">—</span>
+                <span class="price home">2,50</span>
+              </div>
+            </div>
+
+            <div class="menu-item">
+              <div class="item-info">
+                <div class="item-name">Espresso Double</div>
+                <div
+                  class="item-desc"
+                  data-en="40g of the exact same coffee."
+                  data-gr="40γρ από τον ίδιο ακριβώς καφέ."
+                >
+                  40g of the exact same coffee.
+                </div>
+              </div>
+              <div class="item-prices">
+                <span class="price away">2,50</span>
+                <span class="price home">3,30</span>
+              </div>
+            </div>
+
+            <div class="menu-item">
+              <div class="item-info">
+                <div class="item-name">Batch Brew</div>
+                <div
+                  class="item-desc"
+                  data-en="Always fresh, always ready. The coffee that never makes you wait."
+                  data-gr="Πάντα φρέσκο, πάντα έτοιμο. Ο καφές που ποτέ δεν σε κάνει να περιμένεις."
+                >
+                  Always fresh, always ready. The coffee that never makes you
+                  wait.
+                </div>
+              </div>
+              <div class="item-prices">
+                <span class="price away">2,90</span>
+                <span class="price home">3,60</span>
+              </div>
+            </div>
+
+            <div class="menu-item">
+              <div class="item-info">
+                <div class="item-name">Filter Coffee V60</div>
+                <div
+                  class="item-desc"
+                  data-en="Japanese found out that a 60-degree angle is the right angle."
+                  data-gr="Οι Ιάπωνες ανακάλυψαν ότι η γωνία 60 μοιρών είναι η σωστή."
+                >
+                  Japanese found out that a 60-degree angle is the right angle.
+                </div>
+              </div>
+              <div class="item-prices">
+                <span class="price away">4,10</span>
+                <span class="price home">5,10</span>
+              </div>
+            </div>
+
+            <div class="menu-item">
+              <div class="item-info">
+                <div class="item-name">Cappuccino Single</div>
+                <div
+                  class="item-desc"
+                  data-en="Italians have always known the stairway to heaven passes through espresso with milk."
+                  data-gr="Οι Ιταλοί ήξεραν πάντα ότι ο δρόμος για τον παράδεισο περνά από εσπρέσο με γάλα."
+                >
+                  Italians have always known the stairway to heaven passes
+                  through espresso with milk.
+                </div>
+              </div>
+              <div class="item-prices">
+                <span class="price away">2,50</span>
+                <span class="price home">3,30</span>
+              </div>
+            </div>
+
+            <div class="menu-item">
+              <div class="item-info">
+                <div class="item-name">Cappuccino Double</div>
+                <div
+                  class="item-desc"
+                  data-en="Because a single ride there won't be enough."
+                  data-gr="Γιατί μία μερίδα δεν θα φτάσει."
+                >
+                  Because a single ride there won't be enough.
+                </div>
+              </div>
+              <div class="item-prices">
+                <span class="price away">2,80</span>
+                <span class="price home">3,60</span>
+              </div>
+            </div>
+
+            <div class="menu-item">
+              <div class="item-info">
+                <div class="item-name">Latte</div>
+                <div
+                  class="item-desc"
+                  data-en="If milk is not enough, simply add more."
+                  data-gr="Αν το γάλα δεν φτάνει, απλά βάλε περισσότερο."
+                >
+                  If milk is not enough, simply add more.
+                </div>
+              </div>
+              <div class="item-prices">
+                <span class="price away">2,80</span>
+                <span class="price home">3,60</span>
+              </div>
+            </div>
+
+            <div class="menu-item">
+              <div class="item-info">
+                <div class="item-name">Espresso Machiato Double</div>
+                <div
+                  class="item-desc"
+                  data-en="Damn, it's sweet!"
+                  data-gr="Ω, πόσο γλυκό είναι!"
+                >
+                  Damn, it's sweet!
+                </div>
+              </div>
+              <div class="item-prices">
+                <span class="price away">2,50</span>
+                <span class="price home">3,30</span>
+              </div>
+            </div>
+
+            <div class="menu-item">
+              <div class="item-info">
+                <div class="item-name">Cortado</div>
+                <div
+                  class="item-desc"
+                  data-en="Equal parts espresso and warm milk."
+                  data-gr="Ίσες μερίδες εσπρέσο και ζεστό γάλα."
+                >
+                  Equal parts espresso and warm milk.
+                </div>
+              </div>
+              <div class="item-prices">
+                <span class="price away">2,70</span>
+                <span class="price home">3,50</span>
+              </div>
+            </div>
+
+            <div class="menu-item">
+              <div class="item-info">
+                <div class="item-name">Flat White</div>
+                <div
+                  class="item-desc"
+                  data-en="In the mid 80's Australians steamed milk velvetier."
+                  data-gr="Στα μέσα των 80s οι Αυστραλοί αχνίζανε το γάλα πιο βελούδινα."
+                >
+                  In the mid 80's Australians steamed milk velvetier.
+                </div>
+              </div>
+              <div class="item-prices">
+                <span class="price away">2,70</span>
+                <span class="price home">3,50</span>
+              </div>
+            </div>
+
+            <div class="menu-item">
+              <div class="item-info">
+                <div class="item-name">Freddo Espresso</div>
+                <div
+                  class="item-desc"
+                  data-en="In 1993 Greeks invented a solution to deal with the heat."
+                  data-gr="Το 1993 οι Έλληνες βρήκαν τη λύση για τη ζέστη."
+                >
+                  In 1993 Greeks invented a solution to deal with the heat.
+                </div>
+              </div>
+              <div class="item-prices">
+                <span class="price away">2,50</span>
+                <span class="price home">3,30</span>
+              </div>
+            </div>
+
+            <div class="menu-item">
+              <div class="item-info">
+                <div class="item-name">Freddo Cappuccino</div>
+                <div
+                  class="item-desc"
+                  data-en="And then they added milk."
+                  data-gr="Και μετά πρόσθεσαν γάλα."
+                >
+                  And then they added milk.
+                </div>
+              </div>
+              <div class="item-prices">
+                <span class="price away">2,60</span>
+                <span class="price home">3,40</span>
+              </div>
+            </div>
+
+            <div class="menu-item">
+              <div class="item-info">
+                <div class="item-name">On the Rocks</div>
+                <div
+                  class="item-desc"
+                  data-en="A love story between espresso and ice, without the foam."
+                  data-gr="Μια ιστορία αγάπης εσπρέσο και πάγου, χωρίς αφρό."
+                >
+                  A love story between espresso and ice, without the foam.
+                </div>
+              </div>
+              <div class="item-prices">
+                <span class="price away">2,50</span>
+                <span class="price home">3,30</span>
+              </div>
+            </div>
+
+            <div class="menu-item">
+              <div class="item-info">
+                <div class="item-name">Ice Latte</div>
+                <div
+                  class="item-desc"
+                  data-en="A double shot of espresso exploring a cold lake of milk."
+                  data-gr="Ένα διπλό εσπρέσο που εξερευνά μια παγωμένη λίμνη γάλακτος."
+                >
+                  A double shot of espresso exploring a cold lake of milk.
+                </div>
+              </div>
+              <div class="item-prices">
+                <span class="price away">2,80</span>
+                <span class="price home">3,60</span>
+              </div>
+            </div>
+
+            <div class="menu-item">
+              <div class="item-info">
+                <div class="item-name">Cold Brew</div>
+                <div
+                  class="item-desc"
+                  data-en="Freshly grinded coffee ground hold their breath for 14h. Aromas and flavors explode."
+                  data-gr="Φρεσκοαλεσμένος καφές που κρατά την ανάσα του για 14 ώρες. Τα αρώματα εκρήγνυνται."
+                >
+                  Freshly grinded coffee ground hold their breath for 14h.
+                  Aromas and flavors explode.
+                </div>
+              </div>
+              <div class="item-prices">
+                <span class="price away">4,50</span>
+                <span class="price home">5,00</span>
+              </div>
+            </div>
+
+            <div class="menu-item">
+              <div class="item-info">
+                <div class="item-name">Ibrik Coffee</div>
+                <div
+                  class="item-desc"
+                  data-en="In the late 16th century Ozdemir Pasha discovered a new beverage in his region."
+                  data-gr="Στα τέλη του 16ου αιώνα ο Ozdemir Πασάς ανακάλυψε ένα νέο ρόφημα στην περιοχή του."
+                >
+                  In the late 16th century Ozdemir Pasha discovered a new
+                  beverage in his region.
+                </div>
+              </div>
+              <div class="item-prices">
+                <span class="price away">2,00</span>
+                <span class="price home">2,50</span>
+              </div>
+            </div>
+          </div>
+          <div class="addons">
+            <span><strong>Single Origin</strong> &nbsp;+0,50</span>
+            <span
+              ><strong data-en="Plant Based Milk" data-gr="Φυτικό Γάλα"
+                >Plant Based Milk</strong
+              >
+              —
+              <span data-en="Oat" data-gr="Βρώμης">Oat</span> &nbsp;+0,50</span
+            >
+          </div>
+        </div>
+
+        <!-- TEA -->
+        <div class="menu-section">
+          <div class="section-header">
+            <h2 data-en="Tea" data-gr="Τσάι">Tea</h2>
+            <!-- <div class="col-labels"><span>Away</span><span>Home</span></div> -->
+          </div>
+
+          <div class="menu-item">
+            <div class="item-info">
+              <div class="item-name">Young Hyson</div>
+              <div
+                class="item-desc"
+                data-en="100% Sri Lanka green tea."
+                data-gr="Πράσινο τσάι, 100% Κεϋλάνης."
+              >
+                100% Sri Lanka green tea.
+              </div>
+            </div>
+            <div class="item-prices">
+              <span class="price away">2,50</span>
+              <span class="price home">3,30</span>
+            </div>
+          </div>
+
+          <div class="menu-item">
+            <div class="item-info">
+              <div class="item-name">English Breakfast</div>
+              <div
+                class="item-desc"
+                data-en="The typical English morning tea."
+                data-gr="Το κλασικό μαύρο τσάι του πρωινού."
+              >
+                The typical English morning tea.
+              </div>
+            </div>
+            <div class="item-prices">
+              <span class="price away">2,50</span>
+              <span class="price home">3,30</span>
+            </div>
+          </div>
+
+          <div class="menu-item">
+            <div class="item-info">
+              <div
+                class="item-name"
+                data-en="Red Fruits Tea"
+                data-gr="Τσάι με κόκκινα φρούτα"
+              >
+                Red Fruits Tea
+              </div>
+              <div
+                class="item-desc"
+                data-en="Hibiscus, rose hip, forest berries. The tea that looks as good as it tastes."
+                data-gr="Ιβίσκος, τριανταφυλλιά, μούρα του δάσους. Το τσάι που φαίνεται τόσο καλό όσο και η γεύση του."
+              >
+                Hibiscus, rose hip, forest berries. The cup that looks as good
+                as it tastes
+              </div>
+            </div>
+            <div class="item-prices">
+              <span class="price away">2,50</span>
+              <span class="price home">3,30</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- MATCHA -->
+        <div class="menu-section">
+          <div class="section-header">
+            <h2>Matcha</h2>
+            <!-- <div class="col-labels"><span>Away</span><span>Home</span></div> -->
+          </div>
+
+          <div class="menu-item">
+            <div class="item-info">
+              <div class="item-name">Matcha Classic</div>
+              <div
+                class="item-desc"
+                data-en="Ground powder from green tea leaves."
+                data-gr="Αλεσμένη σκόνη από πράσινα φύλλα τσαγιού."
+              >
+                Ground powder from green tea leaves.
+              </div>
+            </div>
+            <div class="item-prices">
+              <span class="price away">4,50</span>
+              <span class="price home">5,30</span>
+            </div>
+          </div>
+
+          <div class="menu-item">
+            <div class="item-info">
+              <div class="item-name">Matcha Strawberry</div>
+              <div
+                class="item-desc"
+                data-en="Ground powder from green tea leaves with strawberry syrup."
+                data-gr="Αλεσμένη σκόνη από πράσινα φύλλα τσαγιού με σιρόπι φράουλας."
+              >
+                Ground powder from green tea leaves with strawberry syrup.
+              </div>
+            </div>
+            <div class="item-prices">
+              <span class="price away">5,00</span>
+              <span class="price home">5,80</span>
+            </div>
+          </div>
+
+          <div class="menu-item">
+            <div class="item-info">
+              <div class="item-name">Matcha Mango</div>
+              <div
+                class="item-desc"
+                data-en="Green powder from green tea leaves with mango syrup."
+                data-gr="Αλεσμένη σκόνη από πράσινα φύλλα τσαγιού με σιρόπι μάνγκο."
+              >
+                Green powder from green tea leaves with mango syrup.
+              </div>
+            </div>
+            <div class="item-prices">
+              <span class="price away">5,00</span>
+              <span class="price home">5,80</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- CHOCOLATES -->
+        <div class="menu-section">
+          <div class="section-header">
+            <h2 data-en="Chocolates" data-gr="Σοκολάτες">Chocolates</h2>
+            <!-- <div class="col-labels"><span>Away</span><span>Home</span></div> -->
+          </div>
+
+          <div class="menu-item">
+            <div class="item-info">
+              <div class="item-name" data-en="Regular" data-gr="Κλασική">
+                Regular
+              </div>
+              <div
+                class="item-desc"
+                data-en="Hot or cold chocolate"
+                data-gr="Ζεστή ή κρύα σοκολάτα"
+              >
+                Hot or cold chocolate
+              </div>
+            </div>
+            <div class="item-prices">
+              <span class="price away">3,50</span>
+              <span class="price home">4,50</span>
+            </div>
+          </div>
+
+          <div class="menu-item">
+            <div class="item-info">
+              <div class="item-name">Mocha</div>
+              <div
+                class="item-desc"
+                data-en="Hot or cold chocolate with a double espresso."
+                data-gr="Ζεστή ή κρύα σοκολάτα με διπλό εσπρέσο."
+              >
+                Hot or cold chocolate with a double espresso.
+              </div>
+            </div>
+            <div class="item-prices">
+              <span class="price away">5,00</span>
+              <span class="price home">5,80</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- SMOOTHIES -->
+        <div class="menu-section">
+          <div class="section-header">
+            <h2>Smoothies</h2>
+            <!-- <div class="col-labels"><span>Away</span><span>Home</span></div> -->
+          </div>
+
+          <div class="menu-item">
+            <div class="item-info">
+              <div class="item-name" data-en="Strawberry" data-gr="Φράουλα">
+                Strawberry
+              </div>
+              <div
+                class="item-desc"
+                data-en="Strawberry 25%, Apple Juice, Banana."
+                data-gr="Φράουλα 25%, Χυμός Μήλου, Μπανάνα."
+              >
+                Strawberry 25%, Apple Juice, Banana.
+              </div>
+            </div>
+            <div class="item-prices">
+              <span class="price away">4,50</span>
+              <span class="price home">5,30</span>
+            </div>
+          </div>
+
+          <div class="menu-item">
+            <div class="item-info">
+              <div class="item-name">Exotic Mix</div>
+              <div
+                class="item-desc"
+                data-en="Pineapple, Banana, Mango."
+                data-gr="Ανανάς, Μπανάνα, Μάνγκο."
+              >
+                Pineapple, Banana, Mango.
+              </div>
+            </div>
+            <div class="item-prices">
+              <span class="price away">4,50</span>
+              <span class="price home">5,30</span>
+            </div>
+          </div>
+
+          <div class="menu-item">
+            <div class="item-info">
+              <div class="item-name">Vitamin Sea</div>
+              <div
+                class="item-desc"
+                data-en="Banana, Peach, Kiwi, Strawberry."
+                data-gr="Μπανάνα, Ροδάκινο, Ακτινίδιο, Φράουλα."
+              >
+                Banana, Peach, Kiwi, Strawberry.
+              </div>
+            </div>
+            <div class="item-prices">
+              <span class="price away">4,50</span>
+              <span class="price home">5,30</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- BEERS -->
+        <div class="menu-section">
+          <div class="section-header">
+            <h2 data-en="Beers" data-gr="Μπύρες">Beers</h2>
+            <!-- <div class="col-labels"><span>Away</span><span>Home</span></div> -->
+          </div>
+
+          <div class="menu-item">
+            <div class="item-info">
+              <div class="item-name">Chloe</div>
+              <div
+                class="item-desc"
+                data-en="Cold beer for unhu"
+                data-gr="Κρύα μπύρα για unhu"
+              >
+                Cold beer for unhu
+              </div>
+            </div>
+            <div class="item-prices">
+              <span class="price away">3,00</span>
+              <span class="price home">6,00</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <p
+        class="menu-footer-note"
+        data-en="There may be more — ask us what's good today."
+        data-gr="Μπορεί να υπάρχουν κι άλλα — ρωτήστε μας τι είναι ωραίο σήμερα."
+      >
+        There may be more — ask us what's good today.
+      </p>
+    </section>
+
+    <footer>
+      <div class="wrap">
+        <a class="logo" href="index.html"><span class="dot"></span>Unhu</a>
+        <div class="foot-links">
+          <a
+            href="index.html#philosophy"
+            data-en="Philosophy"
+            data-gr="Φιλοσοφία"
+            >Philosophy</a
+          >
+          <a href="menu.html" data-en="Menu" data-gr="Μενού">Menu</a>
+          <a
+            href="https://www.instagram.com/unhu.kallithea/"
+            target="_blank"
+            rel="noopener"
+            >Instagram</a
+          >
+        </div>
+      </div>
+      <div class="wrap foot-bottom">Unhu Coffee · Kallithea, Athens</div>
+    </footer>
+
+    <script src="lang.js"></script>
+  </body>
+</html>
