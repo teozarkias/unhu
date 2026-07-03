@@ -1,0 +1,132 @@
+/* contact.css */
+.contact-hero {
+  background: var(--cream);
+  border-bottom: 1px solid rgba(58, 51, 44, 0.08);
+  padding: 56px 0 48px;
+}
+.contact-hero .eyebrow {
+  font-size: 0.78rem;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--sage-deep);
+  font-weight: 700;
+  display: block;
+  margin-bottom: 14px;
+}
+.contact-hero h1 {
+  font-size: clamp(2rem, 4vw, 3rem);
+  margin-bottom: 16px;
+}
+.contact-hero p {
+  color: rgba(58, 51, 44, 0.65);
+  max-width: 480px;
+  font-size: 1rem;
+}
+
+/* layout */
+.contact-body {
+  padding: 72px 0 96px;
+}
+.contact-grid {
+  display: grid;
+  grid-template-columns: 1fr 1.4fr;
+  gap: 56px;
+  align-items: start;
+}
+
+/* info panel */
+.contact-info {
+}
+.info-block {
+  margin-bottom: 36px;
+}
+.info-block .label {
+  font-size: 0.72rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--sage-deep);
+  font-weight: 700;
+  display: block;
+  margin-bottom: 8px;
+}
+.info-block .value {
+  font-size: 1rem;
+  color: var(--ink);
+  line-height: 1.6;
+}
+.info-block a {
+  color: var(--sage-deep);
+  font-weight: 600;
+  border-bottom: 1px solid transparent;
+  transition: border-color 0.2s;
+}
+.info-block a:hover {
+  border-color: var(--sage-deep);
+}
+
+.hours-row {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 0;
+  border-bottom: 1px solid rgba(58, 51, 44, 0.08);
+  font-size: 0.92rem;
+}
+.hours-row:last-child {
+  border-bottom: none;
+}
+.hours-row .day {
+  color: rgba(58, 51, 44, 0.6);
+}
+
+.ig-card {
+  margin-top: 36px;
+  background: var(--caramel);
+  padding: 24px 22px;
+  border-radius: 3px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+.ig-card span {
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+.ig-card a {
+  background: var(--caramel-deep);
+  color: var(--cream);
+  padding: 10px 18px;
+  font-size: 0.82rem;
+  font-weight: 600;
+  border-radius: 2px;
+  white-space: nowrap;
+  transition: background 0.2s;
+}
+.ig-card a:hover {
+  background: var(--sage-deep);
+}
+
+/* map */
+.map-wrap {
+  border-radius: 3px;
+  overflow: hidden;
+  border: 1px solid rgba(58, 51, 44, 0.1);
+  box-shadow: 0 4px 24px rgba(58, 51, 44, 0.07);
+}
+.map-wrap iframe {
+  display: block;
+  width: 100%;
+  height: 480px;
+  border: none;
+  filter: saturate(0.85) contrast(1.02);
+}
+
+@media (max-width: 800px) {
+  .contact-grid {
+    grid-template-columns: 1fr;
+  }
+  .map-wrap iframe {
+    height: 320px;
+  }
+}
