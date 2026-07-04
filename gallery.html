@@ -1,0 +1,283 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gallery — Unhu Coffee</title>
+    <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Work+Sans:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="gallery.css" />
+  </head>
+  <body>
+    <nav>
+      <div class="wrap">
+        <a class="logo" href="index.html"><span class="dot"></span>Unhu</a>
+        <div class="nav-links">
+          <a
+            href="index.html#philosophy"
+            data-en="Philosophy"
+            data-gr="Φιλοσοφία"
+            >Philosophy</a
+          >
+          <a href="menu.html" data-en="Menu" data-gr="Μενού">Menu</a>
+          <a href="gallery.html" data-en="Gallery" data-gr="Γκαλερί">Gallery</a>
+          <a href="contact.html" data-en="Contact" data-gr="Επικοινωνία"
+            >Contact</a
+          >
+        </div>
+        <div
+          class="nav-right"
+          style="display: flex; align-items: center; gap: 12px"
+        >
+          <button class="lang-btn" aria-label="Toggle language">
+            <span class="lang-en lang-active">EN</span>
+            <span class="lang-gr">GR</span>
+          </button>
+          <button
+            class="hamburger"
+            aria-label="Open menu"
+            aria-expanded="false"
+          >
+            <span></span><span></span><span></span>
+          </button>
+        </div>
+      </div>
+    </nav>
+    <div class="mobile-drawer" style="display: none">
+      <div class="drawer-links">
+        <a href="index.html#philosophy" data-en="Philosophy" data-gr="Φιλοσοφία"
+          >Philosophy</a
+        >
+        <a href="menu.html" data-en="Menu" data-gr="Μενού">Menu</a>
+        <a href="gallery.html" data-en="Gallery" data-gr="Γκαλερί">Gallery</a>
+        <a href="contact.html" data-en="Contact" data-gr="Επικοινωνία"
+          >Contact</a
+        >
+        <a
+          class="drawer-cta"
+          href="contact.html"
+          data-en="Find us"
+          data-gr="Βρείτε μας"
+          >Find us</a
+        >
+      </div>
+    </div>
+
+    <section class="gallery-hero">
+      <div class="wrap">
+        <span
+          class="eyebrow"
+          data-en="Unhu Coffee · Kallithea"
+          data-gr="Unhu Coffee · Καλλιθέα"
+          >Unhu Coffee · Kallithea</span
+        >
+        <h1
+          data-en="The space, the cups,<br>the people."
+          data-gr="Ο χώρος, τα φλιτζάνια,<br>οι άνθρωποι."
+        >
+          The space, the cups,<br />the people.
+        </h1>
+        <p
+          data-en="A glimpse into everyday life at Unhu. Follow us on Instagram for more."
+          data-gr="Μια ματιά στην καθημερινότητα του Unhu. Ακολουθήστε μας στο Instagram για περισσότερα."
+        >
+          A glimpse into everyday life at Unhu. Follow us on Instagram for more.
+        </p>
+        <a
+          class="ig-link"
+          href="https://www.instagram.com/unhu.kallithea/"
+          target="_blank"
+          rel="noopener"
+        >
+          <svg
+            width="16"
+            height="16"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          >
+            <rect x="2" y="2" width="20" height="20" rx="5" />
+            <circle cx="12" cy="12" r="4" />
+            <circle
+              cx="17.5"
+              cy="6.5"
+              r="1"
+              fill="currentColor"
+              stroke="none"
+            />
+          </svg>
+          @unhu.kallithea
+        </a>
+      </div>
+    </section>
+
+    <section class="gallery-section">
+      <div class="wrap">
+        <div class="photo-grid">
+          <div class="photo-cell tall">
+            <img
+              src="https://images.unsplash.com/photo-1554118811-1e0d58224f24?w=800&q=80"
+              alt="Café interior"
+              loading="lazy"
+            />
+            <div class="photo-overlay" data-en="The room" data-gr="Ο χώρος">
+              The room
+            </div>
+          </div>
+
+          <div class="photo-cell">
+            <img
+              src="https://images.unsplash.com/photo-1509042239860-f550ce710b93?w=600&q=80"
+              alt="Cappuccino"
+              loading="lazy"
+            />
+            <div
+              class="photo-overlay"
+              data-en="Cappuccino"
+              data-gr="Cappuccino"
+            >
+              Cappuccino
+            </div>
+          </div>
+
+          <div class="photo-cell">
+            <img
+              src="https://images.unsplash.com/photo-1461023058943-07fcbe16d735?w=600&q=80"
+              alt="Latte art"
+              loading="lazy"
+            />
+            <div class="photo-overlay" data-en="Latte art" data-gr="Latte art">
+              Latte art
+            </div>
+          </div>
+
+          <div class="photo-cell wide">
+            <img
+              src="https://images.unsplash.com/photo-1600093463592-8e36ae95ef56?w=1200&q=80"
+              alt="Morning at the café"
+              loading="lazy"
+            />
+            <div
+              class="photo-overlay"
+              data-en="Morning at Unhu"
+              data-gr="Πρωί στο Unhu"
+            >
+              Morning at Unhu
+            </div>
+          </div>
+
+          <div class="photo-cell">
+            <img
+              src="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?w=600&q=80"
+              alt="Espresso"
+              loading="lazy"
+            />
+            <div class="photo-overlay" data-en="Espresso" data-gr="Εσπρέσο">
+              Espresso
+            </div>
+          </div>
+
+          <div class="photo-cell">
+            <img
+              src="https://images.unsplash.com/photo-1447933601403-0c6688de566e?w=600&q=80"
+              alt="Coffee beans"
+              loading="lazy"
+            />
+            <div class="photo-overlay" data-en="The beans" data-gr="Ο καρπός">
+              The beans
+            </div>
+          </div>
+
+          <div class="photo-cell">
+            <img
+              src="https://images.unsplash.com/photo-1521017432531-fbd92d768814?w=600&q=80"
+              alt="Barista at work"
+              loading="lazy"
+            />
+            <div class="photo-overlay" data-en="At work" data-gr="Στη δουλειά">
+              At work
+            </div>
+          </div>
+
+          <div class="photo-cell">
+            <img
+              src="https://images.unsplash.com/photo-1572442388796-11668a67e53d?w=600&q=80"
+              alt="Cold brew"
+              loading="lazy"
+            />
+            <div class="photo-overlay" data-en="Cold brew" data-gr="Cold brew">
+              Cold brew
+            </div>
+          </div>
+
+          <div class="photo-cell">
+            <img
+              src="https://images.unsplash.com/photo-1559925393-8be0ec4767c8?w=600&q=80"
+              alt="Café corner"
+              loading="lazy"
+            />
+            <div
+              class="photo-overlay"
+              data-en="A corner for two"
+              data-gr="Μια γωνιά για δύο"
+            >
+              A corner for two
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="ig-strip">
+        <p
+          data-en="More photos updated daily on our Instagram."
+          data-gr="Περισσότερες φωτογραφίες κάθε μέρα στο Instagram μας."
+        >
+          More photos updated daily on our Instagram.
+        </p>
+        <a
+          class="btn-primary"
+          href="https://www.instagram.com/unhu.kallithea/"
+          target="_blank"
+          rel="noopener"
+          data-en="Follow @unhu.kallithea"
+          data-gr="Ακολουθήστε @unhu.kallithea"
+          >Follow @unhu.kallithea</a
+        >
+      </div>
+    </section>
+
+    <footer>
+      <div class="wrap">
+        <a class="logo" href="index.html"><span class="dot"></span>Unhu</a>
+        <div class="foot-links">
+          <a href="#philosophy" data-en="Philosophy" data-gr="Φιλοσοφία"
+            >Philosophy</a
+          >
+          <a href="menu.html" data-en="Menu" data-gr="Μενού">Menu</a>
+          <a href="gallery.html" data-en="Gallery" data-gr="Γκαλερί">Gallery</a>
+          <a href="contact.html" data-en="Contact" data-gr="Επικοινωνία"
+            >Contact</a
+          >
+          <a
+            href="https://www.instagram.com/unhu.kallithea/"
+            target="_blank"
+            rel="noopener"
+            >Instagram</a
+          >
+        </div>
+      </div>
+      <div class="wrap foot-bottom">Unhu Coffee · Kallithea, Athens</div>
+    </footer>
+
+    <script src="hamburger.js"></script>
+    <script src="lang.js"></script>
+  </body>
+</html>

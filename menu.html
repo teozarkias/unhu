@@ -24,21 +24,49 @@
             >Philosophy</a
           >
           <a href="menu.html" data-en="Menu" data-gr="Μενού">Menu</a>
-          <a href="index.html#visit" data-en="Visit" data-gr="Επίσκεψη"
-            >Visit</a
-          >
+          <a href="gallery.html" data-en="Gallery" data-gr="Γκαλερί">Gallery</a>
           <a href="contact.html" data-en="Contact" data-gr="Επικοινωνία"
             >Contact</a
           >
         </div>
-        <div style="display: flex; align-items: center; gap: 12px">
+        <div
+          class="nav-right"
+          style="display: flex; align-items: center; gap: 12px"
+        >
           <button class="lang-btn" aria-label="Toggle language">
             <span class="lang-en lang-active">EN</span>
             <span class="lang-gr">GR</span>
           </button>
+          <button
+            class="hamburger"
+            aria-label="Open menu"
+            aria-expanded="false"
+          >
+            <span></span><span></span><span></span>
+          </button>
         </div>
       </div>
     </nav>
+
+    <div class="mobile-drawer" style="display: none">
+      <div class="drawer-links">
+        <a href="index.html#philosophy" data-en="Philosophy" data-gr="Φιλοσοφία"
+          >Philosophy</a
+        >
+        <a href="menu.html" data-en="Menu" data-gr="Μενού">Menu</a>
+        <a href="gallery.html" data-en="Gallery" data-gr="Γκαλερί">Gallery</a>
+        <a href="contact.html" data-en="Contact" data-gr="Επικοινωνία"
+          >Contact</a
+        >
+        <a
+          class="drawer-cta"
+          href="contact.html"
+          data-en="Find us"
+          data-gr="Βρείτε μας"
+          >Find us</a
+        >
+      </div>
+    </div>
 
     <section class="menu-hero">
       <div class="wrap">
@@ -637,13 +665,14 @@
       <div class="wrap">
         <a class="logo" href="index.html"><span class="dot"></span>Unhu</a>
         <div class="foot-links">
-          <a
-            href="index.html#philosophy"
-            data-en="Philosophy"
-            data-gr="Φιλοσοφία"
+          <a href="#philosophy" data-en="Philosophy" data-gr="Φιλοσοφία"
             >Philosophy</a
           >
           <a href="menu.html" data-en="Menu" data-gr="Μενού">Menu</a>
+          <a href="gallery.html" data-en="Gallery" data-gr="Γκαλερί">Gallery</a>
+          <a href="contact.html" data-en="Contact" data-gr="Επικοινωνία"
+            >Contact</a
+          >
           <a
             href="https://www.instagram.com/unhu.kallithea/"
             target="_blank"
@@ -656,5 +685,6 @@
     </footer>
 
     <script src="lang.js"></script>
+    <script src="hamburger.js"></script>
   </body>
 </html>

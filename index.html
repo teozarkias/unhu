@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Unhu Coffee — Kallithea</title>
+    <link rel="icon" type="image/svg+xml" href="favicon.svg" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link
       href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Work+Sans:wght@400;500;600&display=swap"
@@ -16,23 +17,56 @@
       <div class="wrap">
         <a class="logo" href="index.html"><span class="dot"></span>Unhu</a>
         <div class="nav-links">
-          <a href="#philosophy" data-en="Philosophy" data-gr="Φιλοσοφία"
+          <a
+            href="index.html#philosophy"
+            data-en="Philosophy"
+            data-gr="Φιλοσοφία"
             >Philosophy</a
           >
           <a href="menu.html" data-en="Menu" data-gr="Μενού">Menu</a>
-          <a href="#visit" data-en="Visit" data-gr="Επίσκεψη">Visit</a>
+          <a href="gallery.html" data-en="Gallery" data-gr="Γκαλερί">Gallery</a>
           <a href="contact.html" data-en="Contact" data-gr="Επικοινωνία"
             >Contact</a
           >
         </div>
-        <div style="display: flex; align-items: center; gap: 12px">
+        <div
+          class="nav-right"
+          style="display: flex; align-items: center; gap: 12px"
+        >
           <button class="lang-btn" aria-label="Toggle language">
             <span class="lang-en lang-active">EN</span>
             <span class="lang-gr">GR</span>
           </button>
+          <button
+            class="hamburger"
+            aria-label="Open menu"
+            aria-expanded="false"
+          >
+            <span></span><span></span><span></span>
+          </button>
         </div>
       </div>
     </nav>
+
+    <div class="mobile-drawer" style="display: none">
+      <div class="drawer-links">
+        <a href="index.html#philosophy" data-en="Philosophy" data-gr="Φιλοσοφία"
+          >Philosophy</a
+        >
+        <a href="menu.html" data-en="Menu" data-gr="Μενού">Menu</a>
+        <a href="gallery.html" data-en="Gallery" data-gr="Γκαλερί">Gallery</a>
+        <a href="contact.html" data-en="Contact" data-gr="Επικοινωνία"
+          >Contact</a
+        >
+        <a
+          class="drawer-cta"
+          href="contact.html"
+          data-en="Find us"
+          data-gr="Βρείτε μας"
+          >Find us</a
+        >
+      </div>
+    </div>
 
     <section class="hero">
       <div class="wrap">
@@ -134,8 +168,8 @@
             with others. No one becomes themselves alone.
           </p>
           <p
-            data-en="That's the whole idea behind this room: shared tables, coffee made to be lingered over, and a corner of Kallithea where regulars and strangers end up at the same table by the second visit."
-            data-gr="Αυτή είναι η ιδέα πίσω από αυτόν τον χώρο: κοινά τραπέζια, καφές για αργή απόλαυση και μια γωνιά της Καλλιθέας όπου οι τακτικοί και οι ξένοι καταλήγουν στο ίδιο τραπέζι από τη δεύτερη επίσκεψη."
+            data-en="That's the whole idea behind this room: long shared tables, coffee made to be lingered over, and a corner of Kallithea where regulars and strangers end up at the same table by the second visit."
+            data-gr="Αυτή είναι η ιδέα πίσω από αυτόν τον χώρο: μακριά κοινά τραπέζια, καφές για αργή απόλαυση και μια γωνιά της Καλλιθέας όπου οι τακτικοί και οι ξένοι καταλήγουν στο ίδιο τραπέζι από τη δεύτερη επίσκεψη."
           >
             That's the whole idea behind this room: long shared tables, coffee
             made to be lingered over, and a corner of Kallithea where regulars
@@ -189,6 +223,13 @@
               A short, honest menu
             </h2>
           </div>
+          <a
+            class="btn-primary"
+            href="menu.html"
+            data-en="Full menu →"
+            data-gr="Πλήρες μενού →"
+            >Full menu →</a
+          >
         </div>
         <div class="menu-grid">
           <div class="menu-item">
@@ -198,7 +239,7 @@
             </h3>
             <p
               data-en="Double shot, shaken over ice — the Athens classic, done properly."
-              data-gr="Διπλό σκέτο, χτυπημένο με πάγο — η αθηναϊκή κλασσική επιλογή, όπως πρέπει."
+              data-gr="Διπλό σκέτο, χτυπημένο με πάγο — η αθηναϊκή κλασική επιλογή, όπως πρέπει."
             >
               Double shot, shaken over ice — the Athens classic, done properly.
             </p>
@@ -282,12 +323,11 @@
             Come sit with us.
           </h2>
           <p
-            data-en="Tucked into a quiet corner of Kallithea — easy to find, easy to stay a while. Follow along on Instagram for the daily specials and what's fresh out of the oven."
+            data-en="Tucked into a quiet corner of Kallithea — easy to find, easy to stay a while. Follow along on Instagram for the daily specials."
             data-gr="Σε μια ήσυχη γωνιά της Καλλιθέας — εύκολο να βρεθεί, εύκολο να μείνεις. Ακολουθήστε μας στο Instagram για τις καθημερινές προτάσεις."
           >
             Tucked into a quiet corner of Kallithea — easy to find, easy to stay
-            a while. Follow along on Instagram for the daily specials and what's
-            fresh out of the oven.
+            a while. Follow along on Instagram for the daily specials.
           </p>
         </div>
         <div class="visit-card">
@@ -302,14 +342,23 @@
           <div class="visit-row">
             <span class="label" data-en="Hours" data-gr="Ώρες">Hours</span
             ><span
-              data-en="Mon–Sun, 7:30 – 21:00"
-              data-gr="Δευτ–Κυρ, 7:30 – 21:00"
-              >Mon–Sun, 7:30 – 21:00</span
+              data-en="Mon–Sat 7:00–16:00 · Sun 8:00–16:00"
+              data-gr="Δευτ–Σαβ 7:00–16:00 · Κυρ 8:00–16:00"
+              >Mon–Sat 7:00–16:00 · Sun 8:00–16:00</span
             >
           </div>
           <div class="visit-row">
             <span class="label">Instagram</span><span>@unhu.kallithea</span>
           </div>
+          <a
+            class="btn-primary"
+            href="https://www.instagram.com/unhu.kallithea/"
+            target="_blank"
+            rel="noopener"
+            data-en="Follow on Instagram"
+            data-gr="Ακολουθήστε μας στο Instagram"
+            >Follow on Instagram</a
+          >
         </div>
       </div>
     </section>
@@ -321,7 +370,11 @@
           <a href="#philosophy" data-en="Philosophy" data-gr="Φιλοσοφία"
             >Philosophy</a
           >
-          <a href="#menu" data-en="Menu" data-gr="Μενού">Menu</a>
+          <a href="menu.html" data-en="Menu" data-gr="Μενού">Menu</a>
+          <a href="gallery.html" data-en="Gallery" data-gr="Γκαλερί">Gallery</a>
+          <a href="contact.html" data-en="Contact" data-gr="Επικοινωνία"
+            >Contact</a
+          >
           <a
             href="https://www.instagram.com/unhu.kallithea/"
             target="_blank"
@@ -333,6 +386,16 @@
       <div class="wrap foot-bottom">Unhu Coffee · Kallithea, Athens</div>
     </footer>
 
+    <!-- Sticky mobile CTA -->
+    <a
+      class="sticky-menu-btn"
+      href="menu.html"
+      data-en="See Menu"
+      data-gr="Μενού"
+      >See Menu</a
+    >
+
+    <script src="hamburger.js"></script>
     <script src="lang.js"></script>
   </body>
 </html>

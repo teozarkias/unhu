@@ -2,6 +2,7 @@
   --wall: #f4efe6;
   --cream: #fbf8f2;
   --wood: #e3b77d;
+  --wood-footer: #cf924d;
   --wood-light: #edcb9e;
   --wood-deep: #b8824b;
   --emerald: #7fa17d;
@@ -372,7 +373,7 @@ nav .wrap {
 }
 .visit-card {
   background: var(--emerald);
-  color: var(--ink);
+  color: var(--wall);
   padding: 56px 48px;
   border-radius: 2px;
   position: relative;
@@ -425,7 +426,7 @@ nav .wrap {
 
 /* FOOTER */
 footer {
-  background: var(--wood-deep);
+  background: var(--wood-footer);
   color: rgba(251, 248, 242, 0.85);
   padding: 56px 0 36px;
 }

@@ -1,0 +1,161 @@
+/* gallery.css */
+.gallery-hero {
+  background: var(--cream);
+  border-bottom: 1px solid rgba(58, 51, 44, 0.08);
+  padding: 56px 0 48px;
+}
+.gallery-hero .eyebrow {
+  font-size: 0.78rem;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--sage-deep);
+  font-weight: 700;
+  display: block;
+  margin-bottom: 14px;
+}
+.gallery-hero h1 {
+  font-size: clamp(2rem, 4vw, 3rem);
+  margin-bottom: 16px;
+}
+.gallery-hero p {
+  color: rgba(58, 51, 44, 0.65);
+  max-width: 480px;
+  font-size: 1rem;
+}
+.gallery-hero .ig-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  margin-top: 20px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--sage-deep);
+  border-bottom: 1px solid var(--sage-deep);
+  padding-bottom: 2px;
+  transition:
+    color 0.2s,
+    border-color 0.2s;
+}
+.gallery-hero .ig-link:hover {
+  color: var(--caramel-deep);
+  border-color: var(--caramel-deep);
+}
+
+/* grid */
+.gallery-section {
+  padding: 72px 0 96px;
+}
+.photo-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 12px;
+}
+
+/* individual cell */
+.photo-cell {
+  position: relative;
+  overflow: hidden;
+  border-radius: 2px;
+  background: var(--sage);
+  aspect-ratio: 1/1;
+}
+.photo-cell.tall {
+  grid-row: span 2;
+  aspect-ratio: unset;
+}
+.photo-cell.wide {
+  grid-column: span 2;
+  aspect-ratio: unset;
+  min-height: 260px;
+}
+.photo-cell img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.4s ease;
+}
+.photo-cell:hover img {
+  transform: scale(1.03);
+}
+
+/* placeholder (when no real image) */
+.photo-placeholder {
+  width: 100%;
+  height: 100%;
+  min-height: 240px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  color: rgba(58, 51, 44, 0.35);
+  font-size: 0.8rem;
+  font-family: "Work Sans", sans-serif;
+}
+.photo-placeholder svg {
+  opacity: 0.4;
+}
+
+/* caption overlay */
+.photo-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    to top,
+    rgba(42, 36, 32, 0.55) 0%,
+    transparent 50%
+  );
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  display: flex;
+  align-items: flex-end;
+  padding: 16px;
+  color: var(--cream);
+  font-size: 0.82rem;
+}
+.photo-cell:hover .photo-overlay {
+  opacity: 1;
+}
+
+/* instagram CTA strip */
+.ig-strip {
+  text-align: center;
+  padding: 56px 32px;
+  background: var(--cream);
+  border-top: 1px solid rgba(58, 51, 44, 0.08);
+}
+.ig-strip p {
+  color: rgba(58, 51, 44, 0.6);
+  margin-bottom: 20px;
+  font-size: 0.95rem;
+}
+.ig-strip .btn-primary {
+  background: var(--sage-deep);
+  color: var(--cream);
+  padding: 14px 28px;
+  font-weight: 600;
+  font-size: 0.95rem;
+  border-radius: 2px;
+  display: inline-block;
+  transition: background 0.2s;
+}
+.ig-strip .btn-primary:hover {
+  background: var(--caramel-deep);
+}
+
+@media (max-width: 720px) {
+  .photo-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 8px;
+  }
+  .photo-cell.tall {
+    grid-row: span 1;
+    aspect-ratio: 1/1;
+  }
+  .photo-cell.wide {
+    grid-column: span 1;
+    min-height: auto;
+    aspect-ratio: 1/1;
+  }
+}
