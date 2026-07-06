@@ -2,7 +2,11 @@
   --wall: #f4efe6;
   --cream: #fbf8f2;
   --wood: #e3b77d;
-  --wood-footer: #cf924d;
+  /*--wood-footer: #d28b3a;*/
+  /*--wood-footer: #cf924d;*/
+  /*--wood-footer: #9c672b;*/
+  /* --wood-footer: #69441b;*/
+  --wood-footer: #9c672b;
   --wood-light: #edcb9e;
   --wood-deep: #b8824b;
   --emerald: #7fa17d;
@@ -398,11 +402,11 @@ nav .wrap {
 }
 .visit-card .btn-primary {
   margin-top: 32px;
-  background: var(--wood-deep);
+  background: var(--emerald-dark);
   color: var(--cream);
 }
 .visit-card .btn-primary:hover {
-  background: var(--ink);
+  background: var(--emerald-dark);
 }
 
 .visit-copy .tag {
