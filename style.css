@@ -645,3 +645,47 @@ footer .foot-links a:hover {
     display: block;
   }
 }
+
+/* ── Ring rotation animations ── */
+@keyframes spin-slow {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+@keyframes spin-med {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(-360deg);
+  }
+}
+@keyframes spin-fast {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.ring-spin-slow {
+  animation: spin-slow 32s linear infinite;
+}
+.ring-spin-med {
+  animation: spin-med 22s linear infinite;
+}
+.ring-spin-fast {
+  animation: spin-fast 40s linear infinite;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .ring-spin-slow,
+  .ring-spin-med,
+  .ring-spin-fast {
+    animation: none;
+  }
+}

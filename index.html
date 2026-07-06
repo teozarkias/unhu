@@ -103,34 +103,67 @@
         </div>
         <div class="hero-visual">
           <div class="ring-cluster">
-            <svg width="100%" height="100%" viewBox="0 0 420 420" fill="none">
-              <circle
-                cx="150"
-                cy="150"
-                r="110"
-                stroke="#E3B77D"
-                stroke-width="1.5"
-                opacity="0.45"
-              />
-              <circle
-                cx="250"
-                cy="190"
-                r="110"
-                stroke="#7FA17D"
-                stroke-width="1.5"
-                opacity="0.55"
-              />
-              <circle
-                cx="195"
-                cy="280"
-                r="110"
-                stroke="#E3B77D"
-                stroke-width="1.5"
-                opacity="0.35"
-              />
-              <circle cx="150" cy="150" r="4" fill="#7FA17D" />
-              <circle cx="250" cy="190" r="4" fill="#E3B77D" />
-              <circle cx="195" cy="280" r="4" fill="#7FA17D" />
+            <svg
+              width="100%"
+              height="100%"
+              viewBox="0 0 500 500"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <g class="ring-spin-slow" style="transform-origin: 170px 170px">
+                <circle
+                  cx="170"
+                  cy="170"
+                  r="148"
+                  stroke="#E3B77D"
+                  stroke-width="1.2"
+                  opacity="0.5"
+                />
+                <circle
+                  cx="170"
+                  cy="170"
+                  r="100"
+                  stroke="#E3B77D"
+                  stroke-width="0.6"
+                  opacity="0.25"
+                  stroke-dasharray="6 10"
+                />
+              </g>
+              <g class="ring-spin-med" style="transform-origin: 300px 220px">
+                <circle
+                  cx="300"
+                  cy="220"
+                  r="148"
+                  stroke="#7FA17D"
+                  stroke-width="1.2"
+                  opacity="0.55"
+                />
+                <circle
+                  cx="300"
+                  cy="220"
+                  r="90"
+                  stroke="#7FA17D"
+                  stroke-width="0.6"
+                  opacity="0.2"
+                  stroke-dasharray="4 12"
+                />
+              </g>
+              <g class="ring-spin-fast" style="transform-origin: 230px 340px">
+                <circle
+                  cx="230"
+                  cy="340"
+                  r="130"
+                  stroke="#E3B77D"
+                  stroke-width="1"
+                  opacity="0.35"
+                />
+              </g>
+              <circle cx="170" cy="170" r="4" fill="#7FA17D" opacity="0.7" />
+              <circle cx="300" cy="220" r="4" fill="#E3B77D" opacity="0.7" />
+              <circle cx="230" cy="340" r="4" fill="#7FA17D" opacity="0.6" />
+              <circle cx="240" cy="105" r="2.5" fill="#E3B77D" opacity="0.45" />
+              <circle cx="390" cy="195" r="2" fill="#7FA17D" opacity="0.4" />
+              <circle cx="130" cy="295" r="2" fill="#E3B77D" opacity="0.35" />
             </svg>
           </div>
         </div>
@@ -378,7 +411,7 @@
       </div>
       <div class="wrap foot-bottom">Unhu Coffee · Kallithea, Athens</div>
     </footer>
-
+    <script src="animate.js"></script>
     <script src="hamburger.js"></script>
     <script src="lang.js"></script>
   </body>
